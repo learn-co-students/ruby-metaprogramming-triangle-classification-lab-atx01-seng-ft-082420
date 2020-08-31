@@ -5,8 +5,8 @@ class Triangle
     @side_two = side_two
     @side_three = side_three
   end
-
-  def kind
+#in retrospect I realllly should have made these attribute names shorter..
+  def kind 
     if self.side_one <= 0 || self.side_two <= 0 || self.side_three <= 0
       raise TriangleError
     elsif self.side_one >= (self.side_two + self.side_three) || self.side_two >= (self.side_one + self.side_three) || self.side_three >= (self.side_one + self.side_two)
